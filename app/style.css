@@ -1,20 +1,17 @@
-html {
+.image-cropper {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    margin-top: 200px;
+    margin-left: 1100px;
 }
 
-.horizontalWrapper {
- white-space: nowrap;
- overflow: auto;
- height: 1000px;
- max-width: 100%;
-
+.navItem {
+  color: #ffffff;
 }
 
-.horizontalPage {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-}
-
-.horizontalPage > p {
-display:inline;
+#skills {
+  padding-bottom: 10%;
 }

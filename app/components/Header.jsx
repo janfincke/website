@@ -5,16 +5,18 @@ const headerStyle = {
   fontFamily: "'Raleway', sans-serif",
   color: "#fff",
   position: "static",
-  fontSize: "130px",
+  fontSize: "180px",
   textAlign: "left",
-  marginLeft: "100px",
+  marginLeft: "150px",
   marginBottom: "50px",
   paddingTop: "20%",
   float: 'left'
 };
 
 const headerImageStyle = {
-  float: 'right'
+  float: 'right',
+  // paddingTop: '10%',
+  // paddingRight: '10%'
 }
 
 export default class Header extends React.Component {
@@ -26,7 +28,7 @@ export default class Header extends React.Component {
             Jan Fincke
         </h1>
       </div>
-      <div>
+      <div className="image-cropper">
         <img src={Background} style={headerImageStyle} />
         </div>
       </div>

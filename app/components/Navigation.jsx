@@ -2,11 +2,12 @@ import React from 'react';
 import { Navbar, Nav, NavItem } from 'react-bootstrap';
 import Scroll from 'react-scroll';
 
-
 let Link = Scroll.Link;
 
+const gitUrl= 'http://www.github.com/janfincke'
+
 const navStyle = {
-  backgroundColor: '#4ea841'
+  backgroundColor: '#5ca841'
 }
 
 const linkStyle = {
@@ -37,7 +38,7 @@ export default class Navigation extends React.Component {
               <NavItem><Link style={linkStyle} className="exp" to="experience" spy={true} smooth={true} duration={500}>Experience</Link></NavItem>
               <NavItem><Link style={linkStyle} className="lang" to="language" spy={true} smooth={true} duration={500}>Language proficiency</Link></NavItem>
               <NavItem><Link style={linkStyle} className="skills" to="skills" spy={true} smooth={true} duration={500}>Skills</Link></NavItem>
-              <NavItem><a style={linkStyle}  href="http://www.github.com/janfincke" target='blank'>Projects</a></NavItem>
+              <NavItem href={gitUrl} target="blank"><span style={linkStyle}>Projects</span></NavItem>
             </Nav>
             </Navbar>
         );
