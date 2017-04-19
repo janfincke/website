@@ -10,13 +10,23 @@ import Skills from './Skills.jsx';
 let Element = Scroll.Element;
 let Events = Scroll.Events;
 let scroll = Scroll.animateScroll;
-var scrollSpy = Scroll.scrollSpy;
+const scrollSpy = Scroll.scrollSpy;
 
-var mainStyle = {
+
+const mainStyle = {
   backgroundColor: "#4ea841",
   margin: "0"
 }
 
+const contentHeaderStyle = {
+  fontFamily: "'Six Caps', sans-serif",
+  color: "#000",
+  position: "static",
+  fontSize: "80px",
+  textAlign: "left",
+  marginBottom: "50px",
+  paddingTop: "5%"
+}
 
 export class Content extends React.Component {
 
@@ -43,35 +53,37 @@ export class Content extends React.Component {
 
     render() {
         return (
-            <div style={mainStyle}>
+            <div className="content" style={mainStyle}>
                 <Navigation />
+                  
 
-                <Element id="start" className="content">
-                    <div className="begin">
-                        <Home />
-                    </div>
-                </Element>
-                <Element id="education" className="content">
-                    <div>
-                        <Education />
-                    </div>
-                </Element>
-                <Element id="experience" className="content">
-                    <div>
-                        <Experience />
-                    </div>
-                </Element>
-                <Element id="language" className="content">
-                    <div>
-                        <Language />
-                    </div>
-                </Element>
-                <Element id="skills" className="content">
-                    <div>
-                        <Skills />
-                    </div>
-                </Element>
-            </div>
+                  <div className="horizontalWrapper">
+                      <Element id="education" className="horizontalPage">
+                            <h1 style={contentHeaderStyle}>
+                                Education
+                            </h1>
+                            <Education />
+                      </Element>
+                      <Element id="experience" className="horizontalPage">
+                          <h1 style={contentHeaderStyle}>
+                              Experience
+                          </h1>
+                              <Experience />
+                      </Element>
+                      <Element id="language" className="horizontalPage">
+                          <h1 style={contentHeaderStyle}>
+                              Language
+                          </h1>
+                              <Language />
+                      </Element>
+                      <Element id="skills" className="horizontalPage">
+                          <h1 style={contentHeaderStyle}>
+                              Skills
+                          </h1>
+                              <Skills />
+                      </Element>
+                  </div>
+                </div>
         )
     }
 }

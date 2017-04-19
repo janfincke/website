@@ -1,23 +1,8 @@
 import React, {Component} from 'react';
 
-const headerStyle = {
-  fontFamily: "'Six Caps', sans-serif",
-  color: "#fff",
-  position: "static",
-  fontSize: "80px",
-  textAlign: "left",
-  marginLeft: "300px",
-  marginBottom: "50px",
-  paddingTop: "5%",
-};
-
 export default class Skills extends Component {
     render() {
         return (
-            <div className="wrapper">
-                <h1 style={headerStyle}>
-                    Skills
-                </h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis elit dui. Integer mollis sem arcu, quis egestas nisl posuere vel. Suspendisse potenti. Aliquam vitae est metus. In hac habitasse platea dictumst. Nulla nec pharetra erat. Donec tincidunt luctus nulla, vitae commodo leo ullamcorper et. Proin in condimentum mi, quis tincidunt eros. Mauris est augue, efficitur in arcu et, feugiat vehicula mi. Nam scelerisque velit eget libero accumsan, eget interdum nibh commodo. Quisque varius volutpat bibendum. Sed ut pharetra leo. Proin condimentum sem sapien, vitae varius eros vestibulum nec. Cras facilisis rhoncus sem, finibus lacinia odio cursus ut. Fusce pellentesque blandit arcu in facilisis. Nulla finibus purus non lobortis scelerisque.
 
@@ -29,7 +14,6 @@ export default class Skills extends Component {
 
                     In hac habitasse platea dictumst. Quisque suscipit a justo et gravida. Pellentesque ac suscipit elit. Integer at est venenatis, scelerisque sapien eget, ullamcorper neque. Sed ut pretium libero. Fusce ac turpis lorem. Nam commodo fermentum ipsum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi leo dolor, semper eget magna et, rutrum malesuada urna. Praesent nec malesuada odio, malesuada hendrerit eros. Donec ut metus nunc. Integer non orci tincidunt, condimentum nisl nec, malesuada nisl. Maecenas arcu ante, dignissim eu porta vel, scelerisque nec tellus. Vivamus eget mollis elit. Nam mauris lectus, laoreet nec nisi et, elementum mattis enim. Nulla ac lectus quis tellus cursus sodales quis ac massa.
                 </p>
-            </div>
         );
     }
 }

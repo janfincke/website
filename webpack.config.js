@@ -22,6 +22,7 @@ module.exports = {
           name: '[path][name].[hash].[ext]',
         },
       },
+      { test: /\.css$/, loader: "style-loader!css-loader" }
     ]
   },
   plugins: [HtmlWebpackPluginConfig]

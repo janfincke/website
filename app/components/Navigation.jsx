@@ -5,17 +5,19 @@ import Scroll from 'react-scroll';
 
 let Link = Scroll.Link;
 
-
+const navStyle = {
+  backgroundColor: '#4ea841'
+}
 
 const linkStyle = {
-  color: "#418c36",
+  color: "#fff",
   align: "right",
   fontSize: "16px",
   fontFamily: "'Raleway', sans-serif"
 }
 
 const brandStyle = {
-  color: "#418c36",
+  color: "#fff",
   fontFamily: "'Raleway', sans-serif",
   fontSize: "20px"
 }
@@ -24,7 +26,7 @@ export default class Navigation extends React.Component {
 
     render() {
         return (
-          <Navbar fluid fixedBottom>
+          <Navbar fixedBottom style={navStyle}>
           <Navbar.Header>
             <Navbar.Brand>
               <Link style={brandStyle} className="home" to="start" spy={true} smooth={true} duration={500}>Jan Fincke</Link>
@@ -38,7 +40,6 @@ export default class Navigation extends React.Component {
               <NavItem><a style={linkStyle}  href="http://www.github.com/janfincke" target='blank'>Projects</a></NavItem>
             </Nav>
             </Navbar>
-
         );
     }
 };
