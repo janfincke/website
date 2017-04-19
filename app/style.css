@@ -15,3 +15,24 @@
 #skills {
   padding-bottom: 10%;
 }
+
+.main-text {
+    clear: both;
+    width: 400px;
+}
+
+.main-text-list {
+    padding-top: 25px;
+    width: auto;
+    float: left;
+}
+
+.main-text-list ul li {
+    list-style-type: none;
+
+}
+
+.main-text-list ul li ul li {
+    margin-bottom: 10px;
+    list-style-type: none;
+}
