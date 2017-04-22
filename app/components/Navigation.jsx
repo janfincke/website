@@ -7,19 +7,19 @@ let Link = Scroll.Link;
 const gitUrl= 'http://www.github.com/janfincke'
 
 const navStyle = {
-  backgroundColor: '#5ca841'
+  backgroundColor: '#e8e8e8'
 }
 
 const linkStyle = {
-  color: "#fff",
+  color: "#000000",
   align: "right",
   fontSize: "16px",
-  fontFamily: "'Raleway', sans-serif"
+  fontFamily: "'Raleway:300', sans-serif"
 }
 
 const brandStyle = {
-  color: "#fff",
-  fontFamily: "'Raleway', sans-serif",
+  color: "#000000",
+  fontFamily: "'Raleway:300', sans-serif",
   fontSize: "20px"
 }
 

@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
 
-const headerStyle = {}
-const pStyle = {}
-const hrStyle = {}
 
 export default class Education extends Component {
     render() {
@@ -19,8 +16,6 @@ export default class Education extends Component {
             </div>
             <div className="main-text-list col-xs-6">
                 <ul>
-                  <li>
-                    <ul>
                     <li>
                       Single-page Web Applications
                     </li>
@@ -39,29 +34,17 @@ export default class Education extends Component {
                     <li>
                       Lego Robot Lab
                     </li>
-                    </ul>
-                  </li>
-
-
                 </ul>
-
             </div>
-            <div className="main-text">
-                <br />
-                <hr/>
-                <br />
-            </div>
-            <div className="main-text">
+            <div className="main-text col-xs-6">
                 <h2>Hämeen ammattikorkeakoulu</h2>
                 <p>
                     Tieto- ja viestintätekniikan insinööri<br />
                     2014 - (2018)<br />
                 </p>
             </div>
-            <div className="main-text-list">
+            <div className="main-text-list col-xs-6">
                 <ul>
-                    <li> Ohjelmointi
-                        <ul>
                             <li>
                                 Ohjelmoinnin perusteet (Javascript)
                             </li>
@@ -83,12 +66,8 @@ export default class Education extends Component {
                             <li>
                                 Käyttöliittymäohjelmointi (C#)
                             </li>
-                        </ul>
                         <br />
-                    </li>
 
-                    <li> Tietojärjestelmät
-                        <ul>
                             <li>
                                 Tietoverkkojen perusteet (Cisco CCNA1)
                             </li>
@@ -116,12 +95,8 @@ export default class Education extends Component {
                             <li>
                                 Mittaustekniikan perusteet<br />
                             </li>
-                        </ul>
                         <br />
-                    </li>
 
-                    <li> Yleissivistävät aineet
-                        <ul>
                             <li>
                                 Matematiikka
                             </li>
@@ -142,84 +117,39 @@ export default class Education extends Component {
                                 Englanti
                             </li>
 
-                        </ul>
-                    </li>
                 </ul>
 
             </div>
-            <div className="main-text">
-                <br />
-                <hr/>
-                <br />
-            </div>
-            <div className="main-text">
+            <div className="main-text col-xs-6">
                 <h2>Hyria koulutus Oy</h2>
                 <p>
                     Tieto- ja tietoliikennetekniikan perustutkinto<br />
                     2009 - 2012<br />
                 </p>
             </div>
-            <div className="main-text-list">
+            <div className="main-text-list col-xs-6">
                 <ul>
-                    <li> Elektroniikan ja ICT:n perustehtävät
-                        <ul>
-                            <li>
-                                Sähkötekniikan peruskytkentöjen mittaus
-                            </li>
-
-                        </ul>
-                        <br />
+                    <li>
+                        Sähkötekniikan peruskytkentöjen mittaus
                     </li>
-
-                    <li> Tietokone- ja tietoliikenneasennukset
-                        <ul>
-                            <li>
-                                Asiakaskoneen asennus ja konfigurointi
-                            </li>
-
-                        </ul>
-                        <br />
+                    <li>
+                        Asiakaskoneen asennus ja konfigurointi
                     </li>
-
-                    <li> Palvelinjärjestelmät ja projektityöt
-                        <ul>
-                            <li>
-                                Pienyrityksen tietoverkon asennus ja konfigurointi
-                            </li>
-
-                        </ul>
-                        <br />
+                    <li>
+                        Pienyrityksen tietoverkon asennus ja konfigurointi
                     </li>
-
-                    <li> Tietokonehuolto
-                        <ul>
-                            <li>
-                                Työasemien ja tulostimien asennus ja verkkoon liittäminen
-                            </li>
-
-                        </ul>
-                        <br />
+                    <li>
+                        Työasemien ja tulostimien asennus ja verkkoon liittäminen
                     </li>
-
-
-                    <li> Järjestelmäasennukset
-                        <ul>
-                            <li>
-                                Viestilaitekehikon kokoonpano
-                            </li>
-                        </ul>
+                    <li>
+                        Viestilaitekehikon kokoonpano
                     </li>
                 </ul>
             </div>
-            <div className="main-text">
-                <br />
-                <hr />
-                <br />
-            </div>
-            <div className="main-text">
+            <div className="main-text col-xs-6">
                 <h2>Varusmieskoulutus</h2>
             </div>
-            <div className="main-text-list">
+            <div className="main-text-list col-xs-6">
                 <ul>
                     <li>
                         Aliupseerikoulutus (tietojärjestelmäasentaja)

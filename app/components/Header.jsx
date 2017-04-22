@@ -3,7 +3,7 @@ import Background from '../images/face.jpg';
 
 const headerStyle = {
   fontFamily: "'Raleway', sans-serif",
-  color: "#fff",
+  color: "#000000",
   position: "static",
   fontSize: "180px",
   textAlign: "left",
@@ -12,6 +12,22 @@ const headerStyle = {
   paddingTop: "20%",
   float: 'left'
 };
+
+
+require('scrollmagic');
+
+var scrollmagic = function() {
+    // init controller
+    var controller = new ScrollMagic.Controller({
+            globalSceneOptions: {globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}}
+        });
+    // init scene
+    var scene = new ScrollMagic.Scene({triggerElement: "#header"})
+					.setTween("#header > div", {y: "120%", ease: Linear.easeNone})
+					.addIndicators()
+					.addTo(controller);
+};
+
 
 const headerImageStyle = {
   float: 'right',
@@ -23,7 +39,7 @@ export default class Header extends React.Component {
   render () {
     return (
       <div className="container-fluid">
-      <div>
+      <div id="header">
         <h1 style={headerStyle}>
             Jan Fincke
         </h1>
